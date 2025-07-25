@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusFlow - 未来の働き方を、今ここに。</title>
+    
+    <!-- Tailwind CSSをCDN経由で読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google FontsからInterフォントを読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* 基本のフォント設定 */
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+        }
+        /* 見出し用のフォント設定 */
+        .font-display {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ===== ヘッダーセクション ===== -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- ロゴ -->
+            <a href="#" class="text-2xl font-bold text-gray-900 font-display">
+                NexusFlow
+            </a>
+            <!-- ナビゲーションメニュー (デスクトップ用) -->
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#features" class="text-gray-600 hover:text-indigo-600 transition-colors">機能</a>
+                <a href="#pricing" class="text-gray-600 hover:text-indigo-600 transition-colors">料金</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors">お問い合わせ</a>
+                <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-transform transform hover:scale-105 shadow-md">
+                    無料で始める
+                </a>
+            </nav>
+            <!-- ハンバーガーメニュー (モバイル用) -->
+            <button class="md:hidden text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== メインコンテンツ ===== -->
+    <main>
+        <!-- ===== ヒーローセクション ===== -->
+        <!-- ユーザーの注意を引くための最初の大きなセクション -->
+        <section class="text-center py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4 font-display leading-tight">
+                    未来の働き方を、<br class="md:hidden">今ここに。
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                    NexusFlowは、チームのコラボレーションを加速させ、生産性を最大化するオールインワン・プラットフォームです。
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="bg-indigo-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-700 transition-transform transform hover:scale-105 shadow-lg">
+                        無料で始める
+                    </a>
+                    <a href="#" class="bg-gray-200 text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-gray-300 transition-colors shadow-lg">
+                        資料請求
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 機能紹介セクション ===== -->
+        <section id="features" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">NexusFlowの主な機能</h2>
+                    <p class="text-gray-600 mt-2">あなたのチームが必要とする全てがここにあります。</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- 機能 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-full h-12 w-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">リアルタイム共同編集</h3>
+                        <p class="text-gray-600">複数人が同時にドキュメントやボードを編集。チームのアイデアを瞬時に形にします。</p>
+                    </div>
+                    <!-- 機能 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-full h-12 w-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">高度なタスク管理</h3>
+                        <p class="text-gray-600">カンバンボード、ガントチャート、カレンダー表示で、プロジェクトの進捗を直感的に把握。</p>
+                    </div>
+                    <!-- 機能 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-full h-12 w-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">シームレスな連携</h3>
+                        <p class="text-gray-600">Slack、Google Drive、GitHubなど、お使いのツールと簡単に連携し、作業効率を向上させます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 料金プランセクション ===== -->
+        <section id="pricing" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">あなたに合ったプランを</h2>
+                    <p class="text-gray-600 mt-2">いつでもアップグレード、ダウングレード、キャンセルが可能です。</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <!-- プラン 1: Free -->
+                    <div class="border border-gray-200 rounded-xl p-8 text-center flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">Free</h3>
+                        <p class="text-4xl font-bold mb-4">¥0<span class="text-lg font-normal">/月</span></p>
+                        <ul class="text-left space-y-2 mb-8 flex-grow">
+                            <li>✓ 3プロジェクトまで</li>
+                            <li>✓ 基本的なタスク管理</li>
+                            <li>✓ 500MBストレージ</li>
+                        </ul>
+                        <a href="#" class="mt-auto bg-gray-200 text-gray-800 w-full px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition-colors">
+                            登録する
+                        </a>
+                    </div>
+                    <!-- プラン 2: Pro (おすすめ) -->
+                    <div class="border-2 border-indigo-600 rounded-xl p-8 text-center relative flex flex-col shadow-2xl">
+                        <span class="bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full absolute -top-4 left-1/2 -translate-x-1/2">おすすめ</span>
+                        <h3 class="text-2xl font-bold mb-2">Pro</h3>
+                        <p class="text-4xl font-bold mb-4">¥1,200<span class="text-lg font-normal">/月</span></p>
+                        <ul class="text-left space-y-2 mb-8 flex-grow">
+                            <li>✓ 無制限のプロジェクト</li>
+                            <li>✓ 高度なタスク管理機能</li>
+                            <li>✓ 10GBストレージ</li>
+                            <li>✓ 優先サポート</li>
+                        </ul>
+                        <a href="#" class="mt-auto bg-indigo-600 text-white w-full px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
+                            プランを選択
+                        </a>
+                    </div>
+                    <!-- プラン 3: Enterprise -->
+                    <div class="border border-gray-200 rounded-xl p-8 text-center flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
+                        <p class="text-4xl font-bold mb-4">応相談</p>
+                        <ul class="text-left space-y-2 mb-8 flex-grow">
+                            <li>✓ Proプランの全機能</li>
+                            <li>✓ 高度なセキュリティ</li>
+                            <li>✓ 専任のサポート担当</li>
+                        </ul>
+                        <a href="#" class="mt-auto bg-gray-200 text-gray-800 w-full px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition-colors">
+                            お問い合わせ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA (行動喚起) セクション ===== -->
+        <section id="contact" class="bg-indigo-700 text-white">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h2 class="text-3xl font-bold mb-4">さあ、始めましょう</h2>
+                <p class="max-w-xl mx-auto mb-8">
+                    今すぐ登録して、あなたのチームの生産性を新しいレベルへ。14日間の無料トライアルをお試しください。
+                </p>
+                <a href="#" class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-transform transform hover:scale-105 shadow-lg">
+                    今すぐ無料で試す
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== フッターセクション ===== -->
+    <footer class="bg-gray-800 text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 NexusFlow. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
